@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="hearderArea"></div>
+    </div>
+    <div class="total">
+        <div class="wrap">
+            <div class="nav">
+                <div class="navArea"></div>
+                <ul class="nav_text">
+                    <a href="#">
+                        <li>번역</li>
+                    </a>
+                    <a href="#">
+                        <li>생성</li>
+                    </a>
+                    <a href="#">
+                        <li>분류</li>
+                    </a>
+                    <a href="#">
+                        <li>요약</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="case">
+                <div class="caseArea">
+                    <div class="box_1">
+                        <form action="http://34.64.190.233:10734/chatbot/g" method="GET">
+                            <div class="box_title">
+                                <div class="text-title">한국어</div>
+                            </div>
+                            <textarea name="s" cols="35" rows="8" type="text" placeholder="내용을 입력하세요"></textarea>
+                            <div class="title-bottom">
+                                <div class="print">
+                                    정상 응답률 : 54.3231%
+                                </div>
+                                <button class="run">
+                                    실행
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="box_2">
+                        <div class="box_title">
+                            <div class="text-title">영어</div>
+                        </div>
+                        <div class="result">{ }</div>
+                        <div class="title-bottom">
+                            <button class="o">
+                                O
+                            </button>
+                            <button class="x">
+                                X
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="viewtextArea">
+                <div class="viewtext">
+
+                </div>
+
+            </section>
+        </div>
+    </div>
+</body>
+</html>
