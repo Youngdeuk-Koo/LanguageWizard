@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/style.css') }}">
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/test_style.css"> -->
+    <title>Document</title>
+</head>
+<body>  
+    <div class="wrap">
+        <div class="hearder" href="127.0.0.1:8080/">
+            <div class="textArea">
+                Koo Young Deuk Portfolio
+            </div>
+            <div class="start_image">
+                <img src="../static/images/blackwolf.png" alt="start_image">
+            </div>
+        </div>
+        <div class="content">
+            <!-- <form action="http://127.0.0.1:8080/run" method="GET"> -->
+            <form name="form1" method="GET">
+                <div class="textBox">
+                    <div class="box_one">
+                        <div class="title_box1">
+                            <select name=select id="selectbox">
+                                <!-- <option value='0'<? if($select=='0') " selected";?>번역</option>
+                                <option value='1'<? if($select=='1') " selected";?>요약</option>
+                                <option value='2'<? if($select=='2') " selected";?>생성</option>
+                                <option value='3'<? if($select=='3') " selected";?>분류</option> -->
+                                <option value="0" {{selected0}}>번역</option>
+                                <option value="1" {{selected1}}>요약</option>
+                                <option value="2" {{selected2}}>생성</option>
+                                <option value="3" {{selected3}}>분류</option>
+                            </select>
+                            <div class="inputwrite">
+                                <textarea name="input" type="text" placeholder="내용을 입력해주세요." id="ta1" cols="34" rows="6">{{input1}}</textarea>
+                                <div class="bottom_box1">
+                                    <!-- <input type="submit" value="실행" class="button"> -->
+                                    <input type="button" value="실행" class="button" onclick="goto_url('http://127.0.0.1:8080/run');">
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_two">
+                        <div class="title_box2">Result</div>
+                        <textarea name="output" type="text" id="ta2" cols="34" rows="6">{{output1}}</textarea>           
+                        
+                        <div class="bottom_box2">
+                            <input type="button" name="O" value="O" class="O_button" onclick="goto_url('http://127.0.0.1:8080/o');">
+                            <input type="button" name="X"  value="X" class="X_button" onclick="goto_url('http://127.0.0.1:8080/x');">
+                        </div> 
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script language="javascript">
+
+        function goto_url(act) {
+        
+          document.form1.action = act;
+        
+          document.form1.submit();
+        
+        }
+        
+    </script>
+</body>
+
+</html>

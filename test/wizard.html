@@ -13,6 +13,8 @@
     <div class="header">
         <div class="hearderArea"></div>
     </div>
+    
+
     <div class="total">
         <div class="wrap">
             <div class="nav">
@@ -33,13 +35,14 @@
                 </ul>
             </div>
             <div class="case">
+                
                 <div class="caseArea">
                     <div class="box_1">
-                        <form action="http://34.64.190.233:10734/chatbot/g" method="GET">
+                        <form action="http://127.0.0.1:8080/read/g" method="GET">
                             <div class="box_title">
                                 <div class="text-title">한국어</div>
                             </div>
-                            <textarea name="s" cols="35" rows="8" type="text" placeholder="내용을 입력하세요"></textarea>
+                            <textarea name="input" cols="35" rows="8" type="text" placeholder="내용을 입력하세요">{{input1}}</textarea>
                             <div class="title-bottom">
                                 <div class="print">
                                     정상 응답률 : 54.3231%
@@ -54,15 +57,19 @@
                         <div class="box_title">
                             <div class="text-title">영어</div>
                         </div>
-                        <div class="result">{ }</div>
-                        <div class="title-bottom">
-                            <button class="o">
-                                O
-                            </button>
-                            <button class="x">
-                                X
-                            </button>
+                        <div class="result" name="output">
+                            {{result1}}
                         </div>
+                        <form action="http://127.0.0.1:8080/read/g/o" method="POST">
+                            <div class="title-bottom">
+                                <button class="o" name="input_o" value="ooooo">
+                                    O
+                                </button>
+                                <button class="x" name="input_x" value="xxxxx">
+                                    X
+                                </button>
+                            </div>
+                        </form>        
                     </div>
                 </div>
             </div>
