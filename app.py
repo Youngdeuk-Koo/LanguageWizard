@@ -12,9 +12,9 @@ def index():
 # @app.route('/run/<int:ai_id>/<string:input_text>')
 @app.route('/run', methods=['GET'])
 def run():
-    print(request.data)
     select = request.args.get('select')
     text = request.args.get('input')
+     
     if select == '0':
         return render_template('magician.html', input1=text, output1='Successful translation', selected0='selected')
     elif select == '1':
@@ -31,17 +31,28 @@ def o():
     select = request.args.get('select')
     inp_text = request.args.get('input')
     out_text = request.args.get('output')
-    print(out_text)
+    print('===o :', inp_text)
+    print('===o :', out_text)
 
-    return render_template('magician.html', input1=inp_text)
+    return render_template('magician.html')
     
 @app.route('/x', methods=['GET'])
 def x():
-    print(request.data)
     select = request.args.get('select')
     inp_text = request.args.get('input')
     out_text = request.args.get('output')
-    print(out_text)
+    print('===x :', inp_text)
+    print('===x :', out_text)
+
+    return render_template('magician_x.html', input1=inp_text)
+
+@app.route('/insert', methods=['GET'])
+def insert():
+    select = request.args.get('select')
+    inp_text = request.args.get('input')
+    out_text = request.args.get('output')
+    print('===insert :', inp_text)
+    print('===insert :', out_text)
 
     return render_template('magician.html', input1=inp_text)
 
