@@ -302,16 +302,16 @@ button{
 }
 
 .info_box1{
-    width: 49%;
+    width: 48%;
     height: 500px;
-    margin-left: 14px;
+    margin-left: 26px;
     margin-top: 15px;
     /* background-color: red; */
     border-right: 1px solid rgb(167, 165, 165, 0.3);
 }
 
 .info_box2{
-    width: 49%;
+    width: 48%;
     height: 500px;
     margin-top: 15px;
     /* background-color: blue; */
@@ -319,19 +319,23 @@ button{
 
 .use{
     color: #0FB74C;
-    font-size: 22px;
+    font-size: 23px;
     font-weight: 600;
-    margin-top: 27px;
+    margin-top: 29px;
     margin-left: 10px;
 }
 
 .use_info{
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
     margin-top: 7px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
+.use_info > a:hover{
+    color: rgb(4, 231, 91);
+    transition: all .1s;
+}
 
 
 
