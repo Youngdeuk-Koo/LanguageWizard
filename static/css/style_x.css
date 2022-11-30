@@ -10,14 +10,12 @@
 .hearder{
     margin-left: 10px;
     margin-top: 10px;
-    width: 800px;
+    width: 60px;
     height: 120px;
     background-color: transparent;
     /* border-bottom: 1px solid rgb(167, 165, 165); */
     box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, 0.3);
     border-radius: 5px;
-    
-
 }
 
 .textArea{
@@ -210,7 +208,7 @@ button{
     cursor: pointer;
 }
 
-.db_insert{
+.insert{
     font-weight: 600;
     font-size: 32px;
     line-height: 80px;
@@ -227,7 +225,7 @@ button{
     
 }
 
-.db_insert:hover{
+.insert:hover{
     background-color: rgb(4, 231, 91);
     color: white;
     transition: all .3s;

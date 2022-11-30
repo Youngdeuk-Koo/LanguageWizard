@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
     return render_template('magician.html')
 
-# @app.route('/run/<int:ai_id>/<string:input_text>')
+
 @app.route('/run', methods=['GET'])
 def run():
     select = request.args.get('select')
@@ -21,14 +21,14 @@ def run():
         return render_template('magician.html', input1=text, output1='요약 성공', selected1='selected')
     elif select == '2':
         return render_template('magician.html', input1=text, output1='생성 성공', selected2='selected')
-    else:
+    elif select == '3':
         return render_template('magician.html', input1=text, output1='분류 성공', selected3='selected')
 
 
 @app.route('/o', methods=['GET'])
 def o():
-    print(request.data)
-    select = request.args.get('select')
+
+
     inp_text = request.args.get('input')
     out_text = request.args.get('output')
     print('===o :', inp_text)
@@ -38,7 +38,7 @@ def o():
     
 @app.route('/x', methods=['GET'])
 def x():
-    select = request.args.get('select')
+
     inp_text = request.args.get('input')
     out_text = request.args.get('output')
     print('===x :', inp_text)
@@ -48,11 +48,12 @@ def x():
 
 @app.route('/insert', methods=['GET'])
 def insert():
-    select = request.args.get('select')
     inp_text = request.args.get('input')
     out_text = request.args.get('output')
     print('===insert :', inp_text)
     print('===insert :', out_text)
+    if out_text == '':
+        return render_template('magician_x.html', input1=inp_text)
 
     return render_template('magician.html', input1=inp_text)
 

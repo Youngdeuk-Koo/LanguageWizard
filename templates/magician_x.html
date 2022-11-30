@@ -11,14 +11,14 @@
 </head>
 <body>  
     <div class="wrap">
-        <div class="hearder" href="127.0.0.1:8080/">
+        <a href="/" target="_self"  class="hearder">
             <div class="textArea">
-                Koo Young Deuk Portfolio
+                   Koo Young Deuk Portfolio
             </div>
             <div class="start_image">
                 <img src="../static/images/blackwolf.png" alt="start_image">
             </div>
-        </div>
+        </a>
         <div class="content">
             <!-- <form action="http://127.0.0.1:8080/run" method="GET"> -->
             <form name="form1" method="GET">
@@ -49,7 +49,7 @@
                         <textarea name="output" type="text" placeholder="수정 할 문장을 입력해주세요." id="ta2" cols="34" rows="6">{{output1}}</textarea>           
                         
                         <div class="bottom_box2">
-                            <input type="button" name="db_insert" value="입력 완료" class="db_insert" onclick="goto_url('http://127.0.0.1:8080/insert');">
+                            <input type="button" name="insert" value="입력 완료" class="insert" onclick="goto_url('http://127.0.0.1:8080/insert');">
                         </div> 
                     </div>
                 </div>

@@ -11,14 +11,24 @@
 </head>
 <body>  
     <div class="wrap">
-        <div class="hearder" href="127.0.0.1:8080/">
-            <div class="textArea">
-                Koo Young Deuk Portfolio
-            </div>
+        <!-- <div class="bar"> -->
+        <div class="header">
             <div class="start_image">
                 <img src="../static/images/blackwolf.png" alt="start_image">
             </div>
+            <a href="/" target="_self">
+                <div class="textArea">
+                        Koo Young Deuk Portfolio
+                </div>
+
+            </a>
+            <ul class="nav">
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Cover letter</a></li>
+            </ul>
         </div>
+        <!-- </div> -->
         <div class="content">
             <!-- <form action="http://127.0.0.1:8080/run" method="GET"> -->
             <form name="form1" method="GET">
@@ -54,15 +64,53 @@
                         </div> 
                     </div>
                 </div>
+                <div class="bottom_line"></div>
+                <div class="content_bottom_box">
+                    <div class="info_box1">
+                        <div class="use">사용 모델</div>
+                        <div class="use_info"><a href="#">1. Transformer</a></div>
+                        <div class="use">사용 데이터</div>
+                        <div class="use_info"><a href="#">1. Ai_Hub</a></div>           
+                        <div class="use">사용 언어</div>
+                        <div class="use_info"><a href="#">1. Python</a></div>         
+                        <div class="use">사용 라이브러리</div>
+                        <ul class="use_info">
+                            <li>1. Pytorch</li>
+                            <li>2. Transformers</li>
+
+                        </ul>           
+
+                    </div>
+                    <!-- <div class="use_model">
+                        1. 사용 모델 : Transformer
+                        2. 사용 데이터 : Ai_Hub
+                        3. 사용 언어 : 한국어
+                        4. 사용 기술 : Flask, Python, Tensorflow, HTML, CSS, Javascript
+                        5.  사용 환경 : Windows 10, Python 3.8.5, Tensorflow 2.4.1, Flask 1.1.2
+
+                    </div> -->
+
+                    <div class="info_box2"></div>
+                </div>
             </form>
         </div>
+        <footer>
+            <div class="logo">
+                logo
+            </div>
+            <div>
+                Name. 구영득<br>
+                Addr. 경기도 성남시 분당구 야탑2동 519<br>
+                Tel. 010-2605-0431<br>
+                COPYRIGHT ⓒ 2021 Koo Young Deuk. ALL RIGHTS RESERVED.
+            </div>
+        </footer>
     </div>
     <script language="javascript">
 
         function goto_url(act) {
         
           document.form1.action = act;
-        
           document.form1.submit();
         
         }

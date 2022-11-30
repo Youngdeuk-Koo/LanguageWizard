@@ -7,29 +7,33 @@
     color: #000;
 }
 
-.hearder{
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 800px;
-    height: 120px;
+.header{
+    /* margin-left: 10px; */
+    /* margin-top: 10px; */
+    width: 100%;
+    height: 90px;
     background-color: transparent;
-    /* border-bottom: 1px solid rgb(167, 165, 165); */
-    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, 0.3);
-    border-radius: 5px;
-    
-
+    /* border-bottom: 3px solid rgb(0, 0, 0, 0.3); */
+    box-shadow: 0px 0px 4px 0px rgb(0, 0, 0, 0.3);
+    /* border-radius: 5px; */
+    display: flex;
 }
 
 .textArea{
-    font-size: 48px;
-    font-weight: 600;
-    margin-left: 110px;
-    width: 650px;
-    line-height: 120px;
+    font-size: 32px;
+    font-weight: 580;
+    /* margin-left: 10px; */
+    /* top: -120px; */
+    /* left: -30px; */
+    width: 420px;
+    height: 90px;
+    line-height: 85px;
     background: transparent;
     text-align: center;
     cursor: pointer;
+
 }
+
 
 img{
     max-width: 100%;
@@ -38,10 +42,32 @@ img{
 
 .start_image{
     position: relative;
-    top: -120px;
-    width: 110px;
-    height: 110px;
+    /* top: -80px; */
+    width: 100px;
+    height: 100px;
 
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+    background-color: transparent;
+    width: 100%;
+    /* font-size: 30px; */
+}
+
+.nav > li {
+    font-size: 28px;
+    font-weight: 380;
+    line-height: 90px;
+    margin-left: 180px;
+}
+
+
+li > a:hover{
+    color: red;
+    transition: all 0.1s;
 }
 
 .content{
@@ -255,4 +281,74 @@ button{
     color: white;
     transition: all .3s;
     
+}
+
+.bottom_line{
+    display: flex;
+    width: 99%;
+    margin-top: 50px;
+    margin-left: 8px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(74, 74, 74, 0.2);
+}
+
+.content_bottom_box{
+    width: 100%;
+    height: 570px;
+    /* background-color: aqua; */
+    display: flex;
+
+
+}
+
+.info_box1{
+    width: 49%;
+    height: 500px;
+    margin-left: 14px;
+    margin-top: 15px;
+    /* background-color: red; */
+    border-right: 1px solid rgb(167, 165, 165, 0.3);
+}
+
+.info_box2{
+    width: 49%;
+    height: 500px;
+    margin-top: 15px;
+    /* background-color: blue; */
+}
+
+.use{
+    color: #0FB74C;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 27px;
+    margin-left: 10px;
+}
+
+.use_info{
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 7px;
+    margin-left: 40px;
+}
+
+
+
+
+
+footer{
+    display: flex;
+    background: #1f1f1f;
+    padding: 15px;
+}
+
+footer > div:first-child{
+    flex:3;
+    text-align: center;
+    color: #fff;
+}
+
+footer > div:last-child{
+    flex:9;
+    color: #fff;
 }
