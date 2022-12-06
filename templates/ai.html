@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/style_ai.css') }}">
     <!-- <link rel="script" href="{{ url_for('static', filename='../static/js/js.js') }}"> -->
     <!-- <link rel="stylesheet" type="text/css" href="../static/css/test_style.css"> -->
     <title>Document</title>
@@ -71,14 +71,14 @@
                 <div class="bottom_line"></div>
                 <div class="content_bottom_box">
                     <div class="info_box1">
-                        <!-- <div class="use">Model
+                        <div class="use">Model
                             <ul class="use_info">
-                                <li><a href="#">Transformer</a></li>
+                                <li><a href="#">{{model}}</a></li>
                             </ul>
                         </div>
                         <div class="use">Data
                             <ul class="use_info">
-                                <li><a href="#">Ai_hub</a></li>
+                                <li><a href="#">{{data}}</a></li>
                             </ul>
                         </div>
                         <div class="use">language
@@ -88,17 +88,19 @@
                         </div>
                         <div class="use">Library
                             <ul class="use_info">
-                                <li><a href="#">Pytorch</a></li>
-                                <li><a href="#">transformers</a></li>
+                                <li><a href="#">{{library1}}</a></li>
+                                <li><a href="#">{{library2}}</a></li>
+                                <li><a href="#">{{library3}}</a></li>
+                                <li><a href="#">{{library4}}</a></li>
                             </ul>
                         </div>
                         <div class="use">Code
                             <ul class="use_info">
-                                <li><a href="#">Colab</a></li>
+                                <li><a href={{link}}>Colab</a></li>
 
                             </ul>
                         </div>
-                             -->
+                            
 
                     </div>
                     <!-- <div class="use_model">
